@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="./horoscope.js"></script>
+  <script type="text/javascript" src="./person.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+ 
+    <h1 style="background-color: maroon;color:white;padding:20px;text-align: center;">Example for ProtoType Pattern using Person Data</h1>
+    <div align=center>
+    <table>
+      <tr>
+          <td> <label>Enter Name:</label></td>
+          <td><input id="name" placeholder="enter name"></td>
+       </tr>
+       <tr>
+          <td><label>Enter Age:</label></td>
+           <td> <input id="age" placeholder="enter age"></td>
+       </tr>
+       <tr>
+           <td><label>Enter Contact Number :</label> </td>
+           <td><input id="contactno" placeholder="enter contact number"></td>
+       </tr>
+       <tr>
+          <td><label>Enter Email Id :</label></td>
+          <td> <input id="email" placeholder="enter email id"></td>
+        </tr>
+        <tr>
+          <td colspan="2" align=center>
+             <button id="add" onclick="addPerson();">Add Person</button>
+          </td>
+        </tr>
+        </table>
+  </div>
+  <div align= center>
+    <br>
+    <h2>Get Persons List so far along with Today Horoscope</h2>
+    <label>Enter age:</label> <input id="nameCondition" placeholder="enter 0 for all">
+    <button id="nameConditionBrn" onclick="getByAgeCondition();">Get</button>
+    <p id="personsList"> empty</p>
+  </div>
+  
+
+
+  <div>
+    <span>Last Error is : </span>
+    <label id="error" >No Error</label>
+  </div>
+</body>
+</html>

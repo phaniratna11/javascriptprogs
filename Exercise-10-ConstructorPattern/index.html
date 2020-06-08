@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="./person.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+  <div>
+    <h1>Example for Constructor Pattern using Person Data</h1>
+
+    <label>Enter Name:</label> <input id="name" placeholder="enter name">
+    <label>Enter Age:</label> <input id="age" placeholder="enter age">
+    <button id="add" onclick="addPerson();">Add Person</button>
+  </div>
+  <div>
+    <br>
+    <h2>Get Persons List so far</h2>
+    <label>Enter age:</label> <input id="ageCondition" placeholder="enter 0 for all">
+    <button id="ageConditionBrn" onclick="getByAgeCondition()">Get</button>
+    <p id="personsList"> empty</p>
+  </div>
+</body>
+</html>

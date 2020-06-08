@@ -1,0 +1,30 @@
+#personsList {
+  width: 400px;
+  height: 400px;
+  padding: 2px, 2px, 2px, 2px;
+  border: 1px solid red;
+};
+#errorRes{
+  border: 2px solid red;
+  color:red;
+};
+.errorText{
+  border: 2px solid red;
+  color:red;
+};
+#myHeading{
+  background-color: brown;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+};
+#myForm{
+  width: 400px;
+  height: 400px;
+  padding: 2px, 2px, 2px, 2px;
+  border: 1px solid red;
+  background-color: thistle;
+  text-align: center;
+};
+

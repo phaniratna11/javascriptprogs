@@ -1,0 +1,7 @@
+npm init
+
+package:(webpackageexample)
+description :this is example for webpack and npm
+index.js
+
+npm install webpack webpack-cli-save-dev

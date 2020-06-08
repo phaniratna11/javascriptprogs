@@ -1,0 +1,13 @@
+#personsList {
+  width: 300px;
+  height: 300px;
+  padding: 2px, 2px, 2px, 2px;
+  border: 1px solid red;
+};
+#header{
+  background-color: bisque;
+  color: blueviolet;
+  padding: 20px;
+  text-align: center;
+
+}

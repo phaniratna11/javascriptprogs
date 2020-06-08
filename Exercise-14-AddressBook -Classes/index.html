@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="./domAccess.js"></script>
+  <script type="text/javascript" src="./contact.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+  <script type="text/javascript" src="./address.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <h1>Example for Contacts and Persons List</h1>
+    <!-- add people via hard coded list -->
+    <label>Enter PID :</label> <input id="pid" placeholder=""><br>
+    <label>Enter Name :</label> <input id="name" placeholder=""><br>
+    <label>Enter Job :</label> <input id="job" placeholder=""><br>
+    <label>Enter HNO :</label> <input id="hno" placeholder=""><br>
+    <label>Enter Street :</label> <input id="street" placeholder=" "><br>
+    <label>Enter City Name:</label> <input id="city" placeholder="  "><br>
+    <label>Enter Pin Code :</label> <input id="pincode" placeholder="  "><br>
+    <label>Enter State :</label> <input id="state" placeholder="  "><br>
+    <h4 style="color:darkblue">Click to Populate SELECT with JSON</h4>
+    <button id="add" onclick="addPersons();">Add Persons</button>
+  </div>
+  <hr>
+  <div>
+  
+  <!--The SELECT element.-->
+  <select id="sel" onchange="show(this)">
+    <option value="">-- Select --</option>
+  </select>
+  <p id="msg"></p>
+  </div>
+  <div>
+    <br>
+     
+    <h2>Get Persons details including address book </h2>
+    <label>Enter Name:</label> <input id="pidCondition" placeholder="">
+    <button id="pidConditionBtn" onclick="getPersonDetails();">Get</button>
+
+    <p id="personsDetails"> empty</p>
+     <h2> Add a friend to given Person</h2>
+
+  </div>
+</body>
+</html>

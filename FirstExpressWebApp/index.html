@@ -1,0 +1,86 @@
+<html>
+<head>
+<script language="javascript">
+       function check() {
+	   		 if(document.form1.pid.value=="")
+			 {  
+           		alert("Enter Your Number");
+		   		document.form1.pid.focus();
+		   		return false;
+		   }
+	   	   if(document.form1.name.value=="")  {    
+                alert("Enter name ");
+		        document.form1.name.focus();
+		        return false;
+		   }
+		  
+	     if(document.form1.age.value=="") {  
+           alert("Enter Age");
+		   document.form1.age.focus();
+		   return false;
+		 }
+	  
+		 if(document.form1.hno.value=="")
+		 {  
+           alert("Enter House Number");
+		   document.form1.hno.focus();
+		   return false;
+		 }
+		  if(document.form1.street.value=="")
+		 {  
+           alert("select Street");
+		   document.form1.street.focus();
+		   return false;
+		 }
+		 if(document.form1.city.value=="")
+		 {  
+           alert("select City");
+		   document.form1.city.focus();
+		   return false;
+		 }
+		   		 
+       }
+	    window.history.forward();   
+		function noBack() 
+		{ 
+			window.history.forward(); 
+		} 
+</script></head>
+
+  <form  name="form1" id="form1" onsubmit="return check()">
+  <h1 style=background-color:navy;color:white;text-align:center;padding:30px;'> Student Registration Form </h1>
+  <table border = 1 align=center cellpadding =20px >
+  <tr>
+  <td>
+  <table>
+  
+<tr>
+  <td><B>Enter Your number:<font color=red>*</font></B><td><INPUT TYPE="text" id = "pid"  NAME="pid"></td>
+  </tr>
+<tr>
+  <td><B>Enter Your name :<font color=red>*</font></B><td><INPUT TYPE="text" id = "name" NAME="name"></td>
+  </tr>
+<tr>
+  <td><B>Age:<font color=red>*</font></B><td><INPUT TYPE="texgt" id ="age" NAME="age"></td>
+  </tr>
+<tr>
+  <td><B>House Number:<font color=red>*</font></B><td><INPUT TYPE="text" NAME="hno" id ="hno"></td>
+  </tr>
+  <tr>
+   <td><B>Street Name :<font color=red>*</font></b><td><input type=text id = "street" name="street"></td>
+  </tr>
+  <tr>
+	<td><B>City Name :<font color=red>*</font></b><td><input type=text id = "city" name="city"></td>
+   </tr>
+  </table>
+ <tr>
+ <td align=center ><INPUT TYPE="submit" value="Add Contact" style="background:#8A887B" onclick="addContactInfo();">
+ </td>
+ </tr>
+  </td>
+  </tr>
+  </table>
+</form>
+
+</body>
+</html>

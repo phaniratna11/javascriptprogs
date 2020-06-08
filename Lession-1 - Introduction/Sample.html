@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<p>Click the button to display the unicode of the first character in the string "HELLO WORLD".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = 'C';
+  var n = str.charCodeAt(0);
+  //str = string.toString(n);
+  var x = String.fromCharCode(++n);
+  //document.getElementById("demo").innerHTML = res;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

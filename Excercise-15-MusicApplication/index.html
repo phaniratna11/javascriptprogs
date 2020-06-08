@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="./genre.js"></script>
+  <script type="text/javascript" src="./artist.js"></script>
+  <script type="text/javascript" src="./album.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+  <script type="text/javascript" src="./titles.js"></script>
+  <script type="text/javascript" src="./albumcontent.js"></script>
+  <script type="text/javascript" src="./ContentCreator.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <h1 style=color:maroon>Music Album </h1>
+    <!-- add people via hard coded list -->
+    
+    <button id="add" onclick="addMusicAlbum();">Add Music Album</button>
+    <h4 style="color:darkblue">Available Albums</h4>
+    <!--The SELECT element.-->
+    <select id="sel" onchange="show(this)">
+      <option value="">-- Select --</option>
+    </select>
+    <h2 style='color:green'> Display all Titles and Artists in Album</h2>
+  <p id="msg"></p>
+  </div>
+  <div>
+    <br>
+    <p id="musicDetails"> empty</p>
+  </div>
+  <hr>
+  <div>
+    <h1 style=color:maroon>Title Information </h1>
+    <!-- add people via hard coded list -->
+    <h4 style="color:darkblue">Available Title Names :</h4>
+    <!-- <button id="add" onclick="addTitleInfo();">Add Title Data</button> -->
+    <select id="sel1" onchange="showTitles(this)">
+      <option value="">-- Select --</option>
+    </select>
+    <p id="titleMsg"></p>
+  </div>
+  <div>
+    <h1 style=color:maroon>Artist Information </h1>
+    <!-- add people via hard coded list -->
+    <h4 style='color:darkblue'>Available Aritist Names</h4>
+     <select id='artistSelection' onchange='showArtist(this)'>
+      <option value=" ">-- Select --</option>
+    </select>
+    <p id='artistMsg'></p>
+  </div>
+     
+
+ 
+</body>
+</html>
