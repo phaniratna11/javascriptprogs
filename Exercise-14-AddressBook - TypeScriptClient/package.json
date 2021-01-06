@@ -9,7 +9,7 @@
   "author": "Ojas",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.3",
     "webpack": "^4.43.0",
